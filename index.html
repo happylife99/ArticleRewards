@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>星云付费阅读</title> 
+  <link rel="stylesheet" href="./css/bootstrap.min.css" /> 
+  <script src="./js/jquery.min.js"></script> 
+  <script src="./js/bootstrap.min.js"></script> 
+  <script src="./js/bootstrap-datepicker.js"></script> 
+  <script src="./js/index.js"></script> 
+  <script src="./js/nebPay.js"></script> 
+  
+ </head> 
+ <body style="background:url('./img/bg.jpg');background-size: cover;background-position: center center;"> 
+  <div class="container"> 
+   <div class="row clearfix"> 
+    <div class="col-md-12 column"> 
+     <div> 
+      <blockquote> 
+       <p></p> 
+       <h1><font style="color:yellow"><b>星云付费阅读平台，给你一个展现才华的机会</b></font></h1> 
+       <p></p> 
+      </blockquote> 
+     </div> 
+     <div class="row clearfix"> 
+      <div class="col-md-12 column"> 
+       <div class="panel panel-default"> 
+        <div class="panel-heading"> 
+         <a id="modal-30368" href="#modal-container-30368" role="button" class="btn btn-default" data-toggle="modal">发表文章</a> <a href="./withdraw.html" target="_blank" role="button" class="btn btn-default" >管理员页面</a> 
+		 <br>
+		 1. 在本平台发表文章免费。
+		 <br>
+		 2. 用户订阅文章每篇0.1NAS，一次订阅，终生免费。
+		 <br>
+		 3. 原作者提成0.09NAS，自动打入作者的NAS钱包地址；平台收取手续费0.01NAS。
+         <div class="modal fade" id="modal-container-30368" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+          <div class="modal-dialog"> 
+           <div class="modal-content"> 
+            <div class="modal-header"> 
+             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+             <h4 class="modal-title" id="myModalLabel"> 录入你要发表的文章 </h4> 
+            </div> 
+            <div class="modal-body"> 
+             <form role="form"> 
+              <div class="form-group"> 
+               <label for="articleTitle">标题</label>
+               <input type="text" class="form-control" id="articleTitle"/> 
+              </div> 
+              <div class="form-group"> 
+               <label for="articleContent">内容</label> 
+               <textarea class="form-control" rows="10" id="articleContent"></textarea> 
+              </div> 
+             </form> 
+            </div> 
+            <div class="modal-footer"> 
+             <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> 
+             <button type="button" class="btn btn-primary" id="savebutton">保存</button> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div>
+		</div>
+		
+		
+		<div class="panel panel-default"> 
+		<div class="panel-heading"> 
+		文章列表：
+		</div>
+<div id="searchresult">		
+<!--
+        <div class="panel-body"> 
+         <h2> Heading </h2> 
+         <p> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> 
+         <p> <a class="btn" href="#" id="pay">支付0.1NAS 阅读更多(一次付费，终生免费) &raquo;</a> </p> 
+        </div> 
+        <div class="panel-footer"> 
+         <h2> Heading </h2> 
+         <p> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> 
+         <p> <a class="btn" href="#">View details &raquo;</a> </p> 
+        </div> 
+        <div class="panel-body"> 
+         <h2> Heading </h2> 
+         <p> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> 
+         <p> <a class="btn" href="#">View details &raquo;</a> </p> 
+        </div> 
+        <div class="panel-footer"> 
+         <h2> Heading </h2> 
+         <p> Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> 
+         <p> <a class="btn" href="#">View details &raquo;</a> </p> 
+        </div> 
+		-->
+		</div>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+
+  </div>  
+ </body>
+</html>
